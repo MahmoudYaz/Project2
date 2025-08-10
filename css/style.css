@@ -133,7 +133,9 @@ background-color: rgb(0, 0, 0);
     list-style: none;
     display: flex;
     justify-content: space-evenly;
+    gap: 5px;
     /* border: 1px solid blue; */
+    position: relative;
 }
 
 .header-main-div2-usermenu li {
@@ -144,9 +146,9 @@ background-color: rgb(0, 0, 0);
     position: relative;
     display: inline-block;
     padding: 15px 10px;
-}
-.header-main-div2-usermenu{
-    position: relative;
+    color: black;
+    font-size: 17px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 .header-main-div2-usermenu a::after{
     position: absolute;
@@ -160,13 +162,13 @@ background-color: rgb(0, 0, 0);
     visibility: hidden;
     transition: 1s;
 }
-.header-main-div2-usermenu li:hover a::after{
+.header-main-div2-usermenu a:hover::after{
     height: 100%;
     top: 0px;
     opacity: 1;
     visibility: visible;
 }
-.header-main-div2-usermenu li::after{
+.li-borders::after{
     position: absolute;
     content: "";
     width: 2px;
@@ -178,7 +180,7 @@ background-color: rgb(0, 0, 0);
     visibility: hidden;
     transition: 1s;
 }
-.header-main-div2-usermenu li:hover::after{
+.header-main-div2-usermenu > li > a:hover + .li-borders::after{
     height: 100%;
     top: 0px;
     opacity: 1;
@@ -196,12 +198,12 @@ background-color: rgb(0, 0, 0);
     visibility: hidden;
     transition: 1s;
 }
-.header-main-div2-usermenu li:hover a::before{
+.header-main-div2-usermenu a:hover::before{
     width: 100%;
     opacity: 1;
     visibility: visible;
 }
-.header-main-div2-usermenu li::before{
+.li-borders::before{
     position: absolute;
     content: "";
     width: 0px;
@@ -213,7 +215,7 @@ background-color: rgb(0, 0, 0);
     visibility: hidden;
     transition: 1s;
 }
-.header-main-div2-usermenu li:hover::before{
+.header-main-div2-usermenu > li > a:hover + .li-borders::before{
     width: 100%;
     opacity: 1;
     visibility: visible;
@@ -273,7 +275,7 @@ background-color: rgb(0, 0, 0);
 }
 .header-dropdown dd:hover{
     color:red;
-    transform: scale(1.1); 
+    transform: scale(1.1);
 }
 
 
@@ -329,11 +331,13 @@ background-color: rgb(0, 0, 0);
     display: inline-block;
     font-size: 16px;
     color: #e0c097;
-    transition: 0.8s;
+    transition: 0.5s;
     padding-left: 6px;
+    
 }
 .header-promo a:hover{
-    transform: scale(1.15);
+    transform: scale(1.1);
+    letter-spacing: 1.1px;
 }
 /* ////////////////////////////////////////// main /////////////////////////////////////// */
 .container-main{

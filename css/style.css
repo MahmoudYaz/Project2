@@ -220,12 +220,9 @@ background-color: rgb(0, 0, 0);
     opacity: 1;
     visibility: visible;
 }
-
-
 .header-main-div2-usermenu  > li {
     position: relative;
 }
-
 .header-dropdown{
     position: absolute;
     top: 100%;
@@ -242,7 +239,6 @@ background-color: rgb(0, 0, 0);
     transition: 1s;
     z-index: 2;
     box-shadow: 0.1px 0.1px 10px 1px #5f5f5f ;
- 
 }
 .header-main-div2-usermenu > li:hover .header-dropdown{
     visibility: visible;
@@ -277,8 +273,6 @@ background-color: rgb(0, 0, 0);
     color:red;
     transform: scale(1.1);
 }
-
-
 .header-main-div3{
     /* border: 1px solid #e0c097; */
     padding: 20px;
@@ -333,7 +327,6 @@ background-color: rgb(0, 0, 0);
     color: #e0c097;
     transition: 0.5s;
     padding-left: 6px;
-    
 }
 .header-promo a:hover{
     transform: scale(1.1);
@@ -405,4 +398,96 @@ background-color: rgb(0, 0, 0);
     color: black;
     border: 1px solid #818181;
 }
-
+/* ///////////////////////////////container-Sound////////////////////////////////////// */
+.container-Sound{
+    width: 90%;
+    height: 70vh;
+    background-color: white;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    gap: 12px;
+}
+.Sound-div1, .Sound-div2, .Sound-div3{
+    width: 30%;
+    height: 80%;
+    border: 1px solid #818181;
+    justify-items: center;
+    align-content: flex-end;
+    position: relative;
+    overflow: hidden;
+}
+.Sound-div1{
+    background-image: url(../images/ChatGPT\ Image\ Aug\ 9\,\ 2025\,\ 10_23_29\ PM.png);
+    background-position:center ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.9;
+    transition: 1s;
+    background-size: 100%;
+}
+.Sound-div2{
+    background-image: url(../images/ChatGPT\ Image\ Aug\ 9\,\ 2025\,\ 10_23_29\ PM.png);
+    background-position:center ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.9;
+    transition: 1s;
+    background-size: 100%;
+}
+.Sound-div3{
+    background-image: url(../images/ChatGPT\ Image\ Aug\ 9\,\ 2025\,\ 10_23_29\ PM.png);
+    background-position:center ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.9;
+    transition: 1s;
+    background-size: 100%;
+}
+.Sound-div1-diva{
+    /* border: 1px solid red; */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    text-align: center;
+}
+.Sound-div1-diva h2 {
+    font-size: 26px;
+    color: white;
+    transform: translateY(30px);
+    transition: 1s;
+}
+.Sound-div1-diva a {
+    color: #e0c097;
+    font-size: 20px;
+    line-height: 60px;
+    transform: translateY(40px);
+    transition: 1s;
+}
+.Sound-div1::after,
+.Sound-div2::after,
+.Sound-div3::after{
+  content: "";
+  position: absolute;
+  left: 0; right: 0; bottom: 0;
+  height: 50%;
+  background:-webkit-linear-gradient(bottom, black, transparent);
+  z-index: -1;
+}
+:-webkit-any(.Sound-div1, .Sound-div2, .Sound-div3):hover a,
+:-webkit-any(.Sound-div1, .Sound-div2, .Sound-div3):hover h2 {
+  transform: translateY(-10px);
+  transition: 1s;
+  opacity: 1;
+}
+:-webkit-any(.Sound-div1, .Sound-div2, .Sound-div3) a:hover {
+  transform: translateY(-10px) scale(1.2);
+  letter-spacing: 1px;
+}
+.Sound-div1:hover, .Sound-div2:hover, .Sound-div3:hover{
+    background-size: 110%;
+}
+/* //////////////////////////////////////////////////////////////////////////////////////// */

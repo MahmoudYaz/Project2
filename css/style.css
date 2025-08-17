@@ -421,7 +421,7 @@ background-color: rgb(0, 0, 0);
     overflow: hidden;
 }
 .Sound-div1{
-    background-image: url(../images/ChatGPT\ Image\ Aug\ 9\,\ 2025\,\ 10_23_29\ PM.png);
+    background-image: url(../images/ruck.jpg);
     background-position:center ;
     background-repeat: no-repeat;
     background-size: cover;
@@ -430,7 +430,7 @@ background-color: rgb(0, 0, 0);
     background-size: 100%;
 }
 .Sound-div2{
-    background-image: url(../images/ChatGPT\ Image\ Aug\ 9\,\ 2025\,\ 10_23_29\ PM.png);
+    background-image: url(../images/jaz.jpg);
     background-position:center ;
     background-repeat: no-repeat;
     background-size: cover;
@@ -439,7 +439,7 @@ background-color: rgb(0, 0, 0);
     background-size: 100%;
 }
 .Sound-div3{
-    background-image: url(../images/ChatGPT\ Image\ Aug\ 9\,\ 2025\,\ 10_23_29\ PM.png);
+    background-image: url(../images/pop.jpg);
     background-position:center ;
     background-repeat: no-repeat;
     background-size: cover;
@@ -762,4 +762,229 @@ background-color: rgb(0, 0, 0);
     line-height: 30px;
     color: black;
 }
-/* ////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+/* //////////////////////////////////////////////////like//////////////////////////////////////////////////////// */
+.container-like{
+    width: 90%;
+    height: 100vh;
+    background-color: white;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.like-div1{
+    width: 100%;
+    height: 20vh;
+    /* border: 2px solid rgb(255, 8, 8); */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif, Tahoma, Geneva, Verdana, sans-serif, Courier, monospace;
+}
+.like-div2{
+    width: 94%;
+    height: 75%;
+    /* border: 1px solid rgb(255, 239, 8); */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+ }
+.like-div2-icon{
+    width: 2%;
+    height: 70%;
+    /* border: 1px solid #a31313; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: x-large;
+}
+.like-div3{
+    width: 100%;
+    height: 90%;
+    /* border: 1px solid #a31313; */
+    display: flex;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+.like-parent{
+    width: 25%;
+    height: 100%;
+    /* border: 1px solid #3913a3; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.like-parent1{
+    width: 100%;
+    height: 80%;
+    /* border: 1px solid #79052c; */
+}
+.like-parent1-content{
+    width: 100%;
+    height: 20%;
+    /* border: 1px solid #fd54fd; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.like-parent1-front-img{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column ;
+    justify-content: space-between;
+    align-items: center ;
+}
+.like-parent1-front-img::after{
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 0px;
+    top: 0;
+    left: 0;
+    background-image: url(../images/10.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    opacity: 0;
+    visibility: hidden;
+    transition: 1s;
+    transform: translateY(-100%);
+}
+.like-parent1:hover .like-parent1-front-img::after{
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+.aft1::after{
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 0px;
+    top: 0;
+    left: 0;
+    background-image: url(../images/12.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    opacity: 0;
+    visibility: hidden;
+    transition: 1s;
+    transform: translateY(-100%);
+}
+.like-parent1:hover .aft1::after{
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+.aft2::after{
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 0px;
+    top: 0;
+    left: 0;
+    background-image: url(../images/14.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    opacity: 0;
+    visibility: hidden;
+    transition: 1s;
+    transform: translateY(-100%);
+}
+.like-parent1:hover .aft2::after{
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+.aft3::after{
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 0px;
+    top: 0;
+    left: 0;
+    background-image: url(../images/16.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    opacity: 0;
+    visibility: hidden;
+    transition: 1s;
+    transform: translateY(-100%);
+}
+.like-parent1:hover .aft3::after{
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+.like-parent1-back-img{
+    display: flex;
+    flex-direction: column ;
+    justify-content: flex-end;
+    align-items: center ;
+}
+.like-parent1-back-card{
+    position: absolute;
+    color: white;
+    width: 150px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 1s; 
+    opacity: 0;
+    transform: scale(0.5) translateY(0);
+}
+.like-parent1-back-card a{
+    display: inline-block;
+    width: 50px;
+    height: 40px;
+    background-color: white;
+    color: black;
+    font-size: 25px ;
+    line-height: 40px;
+    text-align: center;
+}
+.like-parent1:hover .like-parent1-back-card{
+    transform: scale(1.1) translateY(-20px);
+    opacity: 0.9;
+}
+.like-parent1-back-card a:hover{
+    background-color: red;
+    color: white;
+}
+.like-parent1-content h2{
+    font-size: 26px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.like-parent:hover .like-parent1-content h2{
+    color: red;
+}
+.like-parent1-content span{
+    font-size: 22px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.old-price{
+    text-decoration: line-through;
+    color: gray;
+}
+/* ///////////////////////////////////////////////////////////////////////////////////////////////////////// */

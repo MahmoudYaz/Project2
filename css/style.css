@@ -987,4 +987,91 @@ background-color: rgb(0, 0, 0);
     text-decoration: line-through;
     color: gray;
 }
-/* ///////////////////////////////////////////////////////////////////////////////////////////////////////// */
+/* ////////////////////////////////////////////////////insights///////////////////////////////////////////////////// */
+.container-insights{
+    width: 90%;
+    height: 100vh;
+    background-color: #F7EEE8;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif, Courier, monospace;
+    
+}
+.insights-div1{
+    width: 90%;
+    height: 12%;
+    /* border: 2px solid rgb(255, 8, 8); */
+    padding-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif, Tahoma, Geneva, Verdana, sans-serif, Courier, monospace;
+}
+.insights-div2{
+    width: 90%;
+    height: 88%;
+    /* border: 1px solid rgb(255, 239, 8); */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+ }
+ .insights-parent{
+    width: 31%;
+    height: 100%;
+    /* border: 1px solid #3913a3; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+ }
+ .insights-img{
+    width: 100%;
+    height: 65%;
+    /* border: 3px solid #f12267; */
+ }
+  .insights-img img{
+    transform: scale(1);
+    transition: 0.7s;
+ }
+ .insights-img:hover img{
+    transform: scale(1.05);
+ }
+ .insights-content{
+    width: 100%;
+    height: 35%;
+    /* border: 1px solid #fd54fd; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-start;
+ }
+.insights-content h3{
+    font-size: 20px;
+    color: gray;
+}
+.insights-content .p1{
+    font-size: 24px;
+    font-weight: 700;
+}
+ .insights-parent:hover .insights-content .p1{
+    color: red;
+}
+.insights-content .p2{
+    font-size: 20px;
+    color: gray;
+}
+.insights-content a{
+    color: #000000;
+    font-size: 24px;
+    transform: scale(1);
+    transition: 0.5s;
+}
+.insights-content a:hover{
+    transform: scale(1.1);
+}
+/* ////////////////////////////////////////////////////         ///////////////////////////////////////////////////// */

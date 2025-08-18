@@ -1121,16 +1121,16 @@ background-color: rgb(0, 0, 0);
 .mus,
 .mus1 {
   font-size: 60px;
-  transition: 0.3s;
+  transition: 0.2s;
 }
 
 .mus  { color: gray; transform: translateY(50%); opacity: 1; }
 .visual-parent-div-icon:hover .mus {
-  transform: translateY(-20%);
-  opacity: 0;
+  transform: translateY(-60%);
+  opacity: 0.1;
 }
 
-.mus1 { color: black; transform: translateY(80%); opacity: 0; }
+.mus1 { color: black; transform: translateY(80%); opacity: 1; }
 .visual-parent-div-icon:hover .mus1 {
   transform: translateY(-50%);
   opacity: 1;

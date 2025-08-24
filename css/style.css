@@ -53,42 +53,25 @@ background-color: rgb(0, 0, 0);
 .header-div2-usermenu li{
     display: inline;
 }
+.header a::before,
 .header a::after{
-    position: absolute;
-    content: "";
-    width: 2px;
-    height: 0px;
-    bottom: 0;
-    left: 0;
-    background-color: #770000;
-    opacity: 0;
-    visibility: hidden;
-    transition: 1s;
+  content:"";
+  position:absolute;
+  top:0;
+  bottom:0;          /* يثبت الطول الكامل */
+  width:2px;
+  background:#770000;
+  transform:scaleY(0);
+  transition: 0.8s;
+  opacity:0;
 }
-.header a:hover::after{
-    width: 2px;
-    height: 90%;
-    opacity: 1;
-    visibility: visible;
-}
-.header a::before{
-    position: absolute;
-    content: "";
-    width: 2px;
-    height: 0px;
-    top: 10%;
-    right: 2px;
-    background-color: #770000;
-    opacity: 0;
-    visibility: hidden;
-    transition: 1s;
-}
-.header a:hover::before{
-    width: 2px;
-    height: 90%;
-    opacity: 1;
-    visibility: visible;
-}
+
+.header a::after{ left:0;  transform-origin: top;    }
+.header a::before{ right:0; transform-origin: bottom; }
+
+.header a:hover::after{ transform:scaleY(1); opacity:1;width:2px; }   /* ينمو من الأعلى للأسفل */
+.header a:hover::before{ transform:scaleY(1); opacity:1; width:2px;}  /* ينمو من الأسفل للأعلى */
+
 .icon{
     transition:0.8s;
 }

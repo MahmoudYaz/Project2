@@ -110,13 +110,22 @@ background-color: rgb(0, 0, 0);
 .header-main-div1{
     /* border: 1px solid 	#ff2e63; */
     display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-bottom: 9px;
+}
+.header-main-div1-icon{
+    width: 70px;
+    height: 70px ;
+    border-radius: 50%;
+    background-color: rgb(202, 0, 0);
+     display: flex;
     justify-content: center;
     align-items: center;
 }
 .header-main-div1 i{
-    color: aqua;
+    color: white;
     font-size: 50px;
-    padding: 10px 20px 10px 0px;
 }
 .header-main-div1 h2{
     font-weight: 300;
@@ -682,7 +691,7 @@ background-color: rgb(0, 0, 0);
 .container-testimonials{
     width: 90%;
     height: 70vh;
-    background-color: rgb(230, 253, 255);
+    background-color: #F5EEE6;
     border-top: 2px solid rgb(156, 156, 156);
     border-bottom: 2px solid rgb(156, 156, 156);
     margin: auto;
